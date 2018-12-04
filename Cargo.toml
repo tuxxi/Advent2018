@@ -1,0 +1,12 @@
+[package]
+name = "Advent_2018" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+authors = ["tuxxi"]
+
+[[bin]]
+name = "day01"
+path = "day01/day01.rs"
+
+[[bin]]
+name = "day02"
+path = "day02/day02.rs"
