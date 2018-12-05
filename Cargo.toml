@@ -3,6 +3,10 @@ name = "Advent_2018" # the name of the package
 version = "0.1.0"    # the current version, obeying semver
 authors = ["tuxxi"]
 
+[dependencies]
+regex = "1.1.0"
+lazy_static = "1.2.0"
+
 [[bin]]
 name = "day01"
 path = "day01/day01.rs"
@@ -10,3 +14,8 @@ path = "day01/day01.rs"
 [[bin]]
 name = "day02"
 path = "day02/day02.rs"
+
+[[bin]]
+name = "day03"
+path = "day03/day03.rs"
+
