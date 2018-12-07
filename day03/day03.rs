@@ -1,11 +1,8 @@
-use regex::Regex;
-use std::collections::HashMap;
+// std
 use std::fs;
-use std::str::Lines;
-
-#[macro_use]
-extern crate lazy_static;
-extern crate regex;
+// crates
+use regex::Regex;
+use lazy_static::*;
 
 #[derive(Debug)]
 struct Claim {
@@ -68,15 +65,15 @@ fn part_one(claims: &Vec<Claim>) -> u32 {
     return total;
 }
 
-/// computes the ID of the claim that does not overlap with other claims
-fn part_two(claims: &Vec<Claim>) -> u32 {
-
-}
+///// computes the ID of the claim that does not overlap with other claims
+//fn part_two(claims: &Vec<Claim>) -> u32 {
+//
+//}
 
 fn main() {
     let data = read_file("day03/day03_input");
     println!("total overlapping: {:?}", part_one(&data));
-    println!("ID that doesn't overlap: {:?}", part_two(&data));
+    //println!("ID that doesn't overlap: {:?}", part_two(&data));
 
 }
 
@@ -92,13 +89,13 @@ mod tests {
             .collect();
         assert_eq!(part_one(&items), 4)
     }
-    #[test]
-    fn test_part_two() {
-        let items = vec!["#1 @ 1,3: 4x4", "#2 @ 3,1: 4x4", "#3 @ 5,5: 2x2"]
-            .iter()
-            .map(|v| Claim::from(v))
-            .collect();
-        assert_eq!(part_two(&items), 3)
-    }
+//    #[test]
+//    fn test_part_two() {
+//        let items = vec!["#1 @ 1,3: 4x4", "#2 @ 3,1: 4x4", "#3 @ 5,5: 2x2"]
+//            .iter()
+//            .map(|v| Claim::from(v))
+//            .collect();
+//        assert_eq!(part_two(&items), 3)
+//    }
 
 }

@@ -2,6 +2,7 @@
 name = "Advent_2018" # the name of the package
 version = "0.1.0"    # the current version, obeying semver
 authors = ["tuxxi"]
+edition = "2018"
 
 [dependencies]
 regex = "1.1.0"
@@ -19,3 +20,6 @@ path = "day02/day02.rs"
 name = "day03"
 path = "day03/day03.rs"
 
+[[bin]]
+name = "day04"
+path = "day04/day04.rs"
